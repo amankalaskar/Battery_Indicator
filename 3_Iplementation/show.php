@@ -21,7 +21,7 @@
     });
  
 </script>
-<body style="background-color:tomato;">	
+<body style="background-color:black;">	
 	  
 	  	<div id="div_refresh", class="center">
 	    <h1 style="font-size:10vw;color:white">
