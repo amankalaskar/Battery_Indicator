@@ -43,13 +43,14 @@ int batteryCharging(){
 }
 
 int main(){
-    while(true){
+    while(1){
         batteryPercent();   //get battery percentage x%.
 
         batteryCharging();  //get battery charging status.
 
         /* open the file for writing*/
-        fp = fopen("C:\xampp\htdocs\battery_status.txt","w+");
+        fp = fopen("battery_status.txt","w+");
+        if(fp==NULL){printf("\n*error*\n");}
         fprintf(fp,"%u%% ",per);
         if(charging == 8){
             fprintf(fp,"Plugged_in");
