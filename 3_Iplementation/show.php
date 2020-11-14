@@ -24,7 +24,7 @@
 <body style="background-color:black;">	
 	  
 	  	<div id="div_refresh", class="center">
-	    <h1 style="font-size:10vw;color:white">
+	    <h1 style="font-size:10vw;color:white;font-style:helvetica">
 	    	<?php
 				$myfile = fopen("battery_status.txt", "r") or die("Unable to open file!");
 				$text = fread($myfile,filesize("battery_status.txt"));
