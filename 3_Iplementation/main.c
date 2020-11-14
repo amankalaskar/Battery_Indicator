@@ -3,8 +3,10 @@
 #include <string.h>
 #include <Windows.h>
 #include <Winbase.h>
+#include "sum.h"
+#include "test_sum.h"
 SYSTEM_POWER_STATUS status;
-FILE *fp;
+FILE * fp;
 char per;
 unsigned char charging;
 unsigned char battery;
@@ -26,7 +28,7 @@ int batteryPercent(){
                 per = battery;
             }
 
-            if(battery>=70 || battery <=30){
+            if(battery>=90 || battery <=30){
                MessageBeep(MB_ICONINFORMATION); //alert
             }
         }
@@ -42,15 +44,15 @@ int batteryCharging(){
     return 0;
 }
 
-int main(){
+int main() {
+
     while(1){
         batteryPercent();   //get battery percentage x%.
 
         batteryCharging();  //get battery charging status.
 
         /* open the file for writing*/
-        fp = fopen("battery_status.txt","w+");
-        if(fp==NULL){printf("\n*error*\n");}
+        fp = fopen("battery_status.txt","w");
         fprintf(fp,"%u%% ",per);
         if(charging == 8){
             fprintf(fp,"Plugged_in");
@@ -60,9 +62,14 @@ int main(){
         }
         /* close the file*/
         fclose(fp);
+        int my_sum = sum(10, 20);					/* Add function call */
+		printf("Sum = %d", my_sum);
+		test_main();
 
         refreshRate(5); //set refresh rate here.
         system("cls");
+
+
     }
     return 0;
 }

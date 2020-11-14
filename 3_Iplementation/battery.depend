@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1605339192 source:c:\users\amank\documents\batteryindicator001\battery\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<Windows.h>
+	<Winbase.h>
+	"sum.h"
+	"test_sum.h"
+
+1605332545 c:\users\amank\documents\batteryindicator001\battery\inc\sum.h
+
+1605332418 source:c:\users\amank\documents\batteryindicator001\battery\src\sum.c
+
+1605339396 c:\users\amank\documents\batteryindicator001\battery\test\test_sum.h
+
+1605334526 source:c:\users\amank\documents\batteryindicator001\battery\test\test_sum.c
+	"unity.h"
+
+1602506208 c:\users\amank\documents\batteryindicator001\battery\unity\unity.h
+	"unity_internals.h"
+
+1602506208 c:\users\amank\documents\batteryindicator001\battery\unity\unity_internals.h
+	"unity_config.h"
+	<setjmp.h>
+	<math.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdint.h>
+	<limits.h>
+	<stdio.h>
+	<stdio.h>
+	<time.h>
+	<time.h>
+
+1602506208 source:c:\users\amank\documents\batteryindicator001\battery\unity\unity.c
+	"unity.h"
+	<stddef.h>
+	<avr/pgmspace.h>
+
