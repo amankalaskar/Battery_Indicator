@@ -1,1 +1,5 @@
-
+***** SYSTEM REQUIREMENTS *****
+1. Windows OS
+2. GCC compiler
+3. XAMPP server
+4. Browser
