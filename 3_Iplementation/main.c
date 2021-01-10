@@ -28,10 +28,9 @@ int batteryPercent(){
                 per = battery;
             }
 
-            if(battery>=90 || battery <=30){
+            if((battery>=90 && (charging == 8 || charging == 9))|| (battery <=30 && !(charging == 8 || charging == 9))){
                MessageBeep(MB_ICONINFORMATION); //alert
             }
-        }
         else {
             printf("Cannot get the power status, error %lu", GetLastError());
         }
