@@ -6,13 +6,9 @@ jobs:
     name: cppcheck
     runs-on: ubuntu-latest
     steps:
-      - uses: deep5050/cppcheck-action@v2.0.0
+      - uses: actions/checkout@v2
         
       - name: Install cppcheck
         run: sudo apt-get -y install cppcheck
       - name: Cppcheck code
         run: cppcheck 
-© 2021 GitHub, Inc.
-
-- name: cppcheck-action
-  uses: deep5050/cppcheck-action@v2.0.0
