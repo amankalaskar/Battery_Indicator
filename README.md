@@ -1,3 +1,7 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/amankalaskar/Battery_Indicator?style=plastic)
+![C/C++ CI](https://github.com/amankalaskar/Battery_Indicator/workflows/C/C++%20CI/badge.svg)
+![cppcheck-action](https://github.com/amankalaskar/Battery_Indicator/workflows/cppcheck-action/badge.svg)
+
 # Battery_Indicator
 
 This application allows you to broadcast your battery percentage over the xampp server. In addition it also alerts you if the battery percentage is going out of bound.
